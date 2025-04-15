@@ -1,9 +1,79 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.1.1">
   <diagram name="Page-1" id="XZ9ERJ91A607tWLSeM0O">
-    <mxGraphModel>
+    <mxGraphModel dx="1393" dy="615" grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="4MA1ALy2jz0zRpKjB_hi-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4MA1ALy2jz0zRpKjB_hi-2" target="4MA1ALy2jz0zRpKjB_hi-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4MA1ALy2jz0zRpKjB_hi-2" value="Backend Storage/Laptop Storage" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-24" y="32" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4MA1ALy2jz0zRpKjB_hi-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4MA1ALy2jz0zRpKjB_hi-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="360" y="62" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4MA1ALy2jz0zRpKjB_hi-3" value="ADF Copy Activity" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="176" y="11" width="120" height="102" as="geometry" />
+        </mxCell>
+        <mxCell id="4MA1ALy2jz0zRpKjB_hi-5" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/databases/Data_Factory.svg;" vertex="1" parent="1">
+          <mxGeometry x="224" y="72" width="24" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="4MA1ALy2jz0zRpKjB_hi-10" value="Bronze" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4MA1ALy2jz0zRpKjB_hi-8" target="4MA1ALy2jz0zRpKjB_hi-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4MA1ALy2jz0zRpKjB_hi-8" value="ADLS Raw" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="360" y="15" width="72" height="98" as="geometry" />
+        </mxCell>
+        <mxCell id="4MA1ALy2jz0zRpKjB_hi-12" value="Removing Duplicates" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4MA1ALy2jz0zRpKjB_hi-9" target="4MA1ALy2jz0zRpKjB_hi-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4MA1ALy2jz0zRpKjB_hi-9" value="ADF Dataflow: Cleaning" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="336" y="176" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4MA1ALy2jz0zRpKjB_hi-11" value="ADLS Cleaned&amp;nbsp;&lt;br&gt;(silver)" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="160" width="104" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="4MA1ALy2jz0zRpKjB_hi-16" value="TYPE 1 &amp;amp; 2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4MA1ALy2jz0zRpKjB_hi-14" target="4MA1ALy2jz0zRpKjB_hi-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4MA1ALy2jz0zRpKjB_hi-14" value="ADF Dataflow(SCD)" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="-16" y="288" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4MA1ALy2jz0zRpKjB_hi-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4MA1ALy2jz0zRpKjB_hi-15" target="4MA1ALy2jz0zRpKjB_hi-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4MA1ALy2jz0zRpKjB_hi-15" value="ADLS Curated&lt;br&gt;(Gold)" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="168" y="280" width="104" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="4MA1ALy2jz0zRpKjB_hi-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4MA1ALy2jz0zRpKjB_hi-17" target="4MA1ALy2jz0zRpKjB_hi-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4MA1ALy2jz0zRpKjB_hi-17" value="SQL&amp;nbsp;&lt;br&gt;Database" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="352" y="272" width="84" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="4MA1ALy2jz0zRpKjB_hi-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4MA1ALy2jz0zRpKjB_hi-18" target="4MA1ALy2jz0zRpKjB_hi-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4MA1ALy2jz0zRpKjB_hi-18" value="Power BI Reports" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="504" y="296" width="184" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="4MA1ALy2jz0zRpKjB_hi-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="4MA1ALy2jz0zRpKjB_hi-19" target="4MA1ALy2jz0zRpKjB_hi-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="396" y="552" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4MA1ALy2jz0zRpKjB_hi-19" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/security/Key_Vaults.svg;" vertex="1" parent="1">
+          <mxGeometry x="536" y="480" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="4MA1ALy2jz0zRpKjB_hi-20" value="Master PipeLine" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="488" width="144" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="4MA1ALy2jz0zRpKjB_hi-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.4;entryY=0.025;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="4MA1ALy2jz0zRpKjB_hi-11" target="4MA1ALy2jz0zRpKjB_hi-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
